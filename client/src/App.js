@@ -1,5 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Shop from "./components/Shop";
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Shop />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

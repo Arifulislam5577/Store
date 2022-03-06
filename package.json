@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "nodemon backend/server.js",
-    "importData": "node backend/utils/seeder.js"
+    "importData": "node backend/utils/seeder.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
